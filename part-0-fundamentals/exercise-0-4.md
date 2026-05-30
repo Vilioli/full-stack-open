@@ -2,6 +2,7 @@
 sequenceDiagram
     browser->>server:POST https://studies.cs.helsinki.fi/exampleapp/new_note
     server->>browser:resource has temporarily been moved to location ~/exampleapp/notes
+    note left of browser: Causes full page reload.
     browser->>server:GET https://studies.cs.helsinki.fi/exampleapp/notes
     server->>browser:sends the html document
     browser->>server:GET https://studies.cs.helsinki.fi/exampleapp/main.css
