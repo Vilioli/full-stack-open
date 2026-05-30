@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     browser->>server:GET https://studies.cs.helsinki.fi/exampleapp/spa
     server->>browser:sends the html document
@@ -9,3 +10,4 @@ sequenceDiagram
     browser->>server:GET https://studies.cs.helsinki.fi/exampleapp/data.json
     server->>browser:sends json containing the note data
     note right of browser:Executes a callback function that renders the note data when it arrives from the server.
+```
